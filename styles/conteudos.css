@@ -208,7 +208,7 @@
 .texto__img {
   padding-top: 4px;
   font-family: var(--fonte--primaria);
-  font-size: 1rem;
+  font-size: .9rem;
   color: var(--cor-texto);
   opacity: .9;
 }

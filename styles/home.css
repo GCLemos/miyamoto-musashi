@@ -4,7 +4,7 @@
   display: flex;
   text-align: center;
   justify-content: center;
-  margin:  10rem 0 10rem 0;
+  margin:  10em 0 8em 0;
 }
 
 .container__conteudo_home {
@@ -39,6 +39,8 @@
 
 .texto__conteudo_home {
   font-size: 1.4rem;
+  text-align:justify;
+  margin: 2em 0;
 }
 
 .secao_principal__conteudo_home {
@@ -157,6 +159,7 @@
 .div_conteudos__secao_principal:hover::before,
 .div_conteudos__secao_principal:hover .descricao__conteudos__secao_principal {
   opacity: 0;
+  pointer-events: none;
 }
 
 

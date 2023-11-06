@@ -91,6 +91,6 @@ textarea {
 }
 
 .botao_enviar__formulario:hover {
-  filter: saturate(.7);
+  filter: contrast(1.2);
   scale: .95;
 }
