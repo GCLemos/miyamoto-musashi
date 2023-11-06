@@ -206,17 +206,17 @@
 }
 
 .texto__img {
-  padding-top: 4px;
+  padding-top: 5px;
   font-family: var(--fonte--primaria);
   font-size: .9rem;
   color: var(--cor-texto);
   opacity: .9;
 }
 
-.texto__img a {
+.texto__img a, .paragrafos__conteudo a {
   color: var(--cor-destaque);
 }
 
-.texto__img a:visited {
+.texto__img a:visited, .paragrafos__conteudo a:visited {
   color: var(--cor-contraste);
 }

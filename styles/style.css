@@ -176,6 +176,7 @@ body {
 
 .texto__rodape {
   width: 40%;
+  word-spacing: 0.15rem;
 }
 
 .fa-brands {
