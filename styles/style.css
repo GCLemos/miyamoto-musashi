@@ -1,0 +1,192 @@
+@import url(reset.css);
+@import url(home.css);
+@import url(conteudos.css );
+@import url(contatos.css);
+
+:root {
+  --cor-de-fundo: #f2f2f2;
+  --cor-texto: #191919;
+  --cor-destaque: #ff1e00;
+  --cor-contraste: #1e4f0d;
+  --cor-banner: #ffffff;
+  --cor-borda: #b0b0b0;
+  --cor-borda-input: #242424;
+
+  --fonte--primaria: 'Roboto', sans-serif;
+  --fonte--secundaria: 'Langar', sans-serif;
+  --fonte--destaque: 'Smooch', cursive;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  color: var(--cor--texto);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  background-color: var(--cor-contraste);
+}
+
+.nav__cabecalho {
+  width: 100%;
+  padding: 1.5% 4%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.item__nav {
+  font-family: var(--fonte--secundaria);
+  font-size: 1.7rem;
+  padding-left: 2.3rem;
+  position: relative;
+  text-decoration: none;
+  color: var(--cor-de-fundo);
+  transition: all 0.2s ease-in-out;
+}
+
+
+.icone_inicio::before {
+  content: '';
+  background: url(../assets/nav/icons/tempora.png) no-repeat;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  background-size: contain;
+  position: absolute;
+  top: 8px;
+  left: 5px;
+  width: 70%;
+  height: 60%;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+.icone_biografia::before {
+  content: '';
+  background: url(../assets/nav/icons/samurai.png) no-repeat;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  background-size: contain;
+  position: absolute;
+  top: 6px;
+  left: 1px;
+  width: 70%;
+  height: 65%;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+.icone_kenjutsu::before {
+  content: '';
+  background: url(../assets/nav/icons/katana.png) no-repeat;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  background-size: contain;
+  position: absolute;
+  top: 7px;
+  left: 2px;
+  width: 70%;
+  height: 60%;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+.icone_legado::before {
+  content: '';
+  background: url(../assets/nav/icons/pergaminho.png) no-repeat;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  background-size: contain;
+  position: absolute;
+  top: -2px;
+  left: -8px;
+  width: 70%;
+  height: 100%;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+.icone_contatos::before {
+  content: '';
+  background: url(../assets/nav/icons/entrega-de-pombo.png) no-repeat;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  background-size: contain;
+  position: absolute;
+  top: 2px;
+  left: -2px;
+  width: 70%;
+  height: 77%;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+.item__nav::after {
+  content: '';
+  background: url(../assets/nav/brushline-nav.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  bottom: -42px;
+  left: 12px;
+  width: 90%;
+  height: 100%;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.item__nav:hover,
+.item__nav:hover::after {
+  display: inline-block;
+  scale: 1.2;
+  text-shadow:  rgba(37, 37, 37, 0.768) -2px 2px 2px;
+  opacity: 0.9;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: transparent;
+  font-family: var(--fonte--secundaria);
+  font-size: 1.5rem;
+  color: var(--cor-destaque);
+  padding: 2rem;
+}
+
+.divisor__rodape {
+  background-color: var(--cor-destaque);
+  border: none;
+  height: 2px;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.container_conteudo__rodape {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+}
+
+.versao__rodape {
+  margin-right: 1%;
+}
+
+.texto__rodape {
+  width: 40%;
+}
+
+.fa-brands {
+  color: var(--cor-destaque);
+  font-size: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.fa-brands:hover {
+  scale: 1.2;
+  transform: translateY(-5px);
+}

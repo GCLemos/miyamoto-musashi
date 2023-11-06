@@ -1,0 +1,162 @@
+@import url(style.css);
+
+.conteudo_home {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin:  10rem 0 10rem 0;
+}
+
+.container__conteudo_home {
+  width: 50%;
+}
+
+.titulo__conteudo_home {
+  font-family: var(--fonte--destaque);
+  color: var(--cor-texto);
+  font-size: 7rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.span__titulo_home {
+  color: var(--cor-de-fundo);
+  position: sticky;
+  z-index: -1;
+}
+
+.span__titulo_home::before {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  top: -6.2rem;
+  left: -5.7rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-color: var(--cor-destaque);
+}
+
+.texto__conteudo_home {
+  font-size: 1.4rem;
+}
+
+.secao_principal__conteudo_home {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 4em 4em;
+  margin: 2em 0;
+}
+
+.div_conteudos__secao_principal {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 25em;
+  height: 15em;
+  box-shadow:  1px 1px 7px 1px rgba(0, 0, 0, 0.5);
+  filter: saturate(.7);
+  transition: all 0.2s ease-in-out;
+}
+
+.div_conteudos__secao_principal::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background-color: var(--cor-banner);
+  opacity: 0.6;
+  transition: all 0.2s ease-in-out;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+.div_conteudos__secao_principal::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background-color: var(--cor-banner);
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+}
+
+.anchor_div__conteudos {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.titulo__conteudos__secao_principal {
+  width: 100%;
+  height: 50%;
+  display: inline-block;
+  position: relative;
+  font-family: var(--fonte--secundaria);
+  color: var(--cor-texto);
+  font-size: 2.5rem;
+  text-decoration: none;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.descricao__conteudos__secao_principal {
+  width: 100%;
+  height: 50%;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  top: 70px;
+  right: 0;
+  position: relative;
+  display: inline-block;
+  padding: 0 .2rem;
+  font-family: var(--fonte--secundaria);
+  color: var(--cor-texto);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+
+.biografia_background {
+  background: url(../assets/content/miamoto-musashi.jpg) no-repeat 50% 30%;
+  background-size: cover;
+}
+
+.kenjutsu_background {
+  background: url(../assets/content/musashi-fights.png) no-repeat 90% 50%;
+  background-size: 160%;
+}
+
+.legado_background {
+  background: url(../assets/content/samurai-writing.png) no-repeat 50% 20%;
+  background-size: 150%;
+}
+
+.div_conteudos__secao_principal:hover {
+  transform: scale(1.1);
+  filter: saturate(1);
+  box-shadow:  1px 1px 7px 5px rgba(0, 0, 0, 0.28);
+}
+
+.div_conteudos__secao_principal:hover .titulo__conteudos__secao_principal {
+  color: var(--cor-destaque);
+  transform: scale(1.1);
+  font-size: 3rem;
+  text-shadow: rgba(37, 37, 37, 0.768) -4px 4px 5px;
+}
+
+.div_conteudos__secao_principal:hover::after,
+.div_conteudos__secao_principal:hover::before,
+.div_conteudos__secao_principal:hover .descricao__conteudos__secao_principal {
+  opacity: 0;
+}
+
+
