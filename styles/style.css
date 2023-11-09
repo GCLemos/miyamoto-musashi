@@ -4,7 +4,7 @@
 @import url(contatos.css);
 
 :root {
-  --cor-de-fundo: #f2f2f2;
+  --cor-de-fundo: #eeeeee;
   --cor-texto: #191919;
   --cor-destaque: #ff1e00;
   --cor-contraste: #1e4f0d;
@@ -70,12 +70,14 @@ body {
   scale: 1.2;
   text-shadow:  rgba(37, 37, 37, 0.768) -2px 2px 2px;
   opacity: 1;
+  transform: translateY(-1px);
 }
 
 .destaque_pagina {
   scale: 1.2;
   position: relative;
   opacity: 1;
+  transform: translateY(-1px);
 }
 
 .icone_inicio::before {
