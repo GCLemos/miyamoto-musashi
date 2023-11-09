@@ -21,7 +21,7 @@
 
 .span__titulo_home {
   color: var(--cor-de-fundo);
-  position: sticky;
+  position: relative;
   z-index: -1;
 }
 
@@ -40,7 +40,24 @@
 .texto__conteudo_home {
   font-size: 1.4rem;
   text-align:justify;
-  margin: 2em 0;
+  margin: 4rem 0;
+}
+
+.titulo_destaques__conteudo_home {
+  font-family: var(--fonte--destaque);
+  color: var(--cor-texto);
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+  text-shadow: var(--cor-texto) 1px 0 0;
+  position: relative;
+}
+
+.span__destaques {
+  color: var(--cor-destaque);
+  text-shadow: var(--cor-destaque) 1px 0 0;
+  position: relative;
+  z-index: -1;
 }
 
 .secao_principal__conteudo_home {
@@ -128,17 +145,17 @@
 }
 
 
-.biografia_background {
+.jornada_background {
   background: url(../assets/content/miamoto-musashi.jpg) no-repeat 50% 30%;
   background-size: cover;
 }
 
-.kenjutsu_background {
+.duelos_background {
   background: url(../assets/content/musashi-fights.png) no-repeat 90% 50%;
   background-size: 160%;
 }
 
-.legado_background {
+.pinturas_background {
   background: url(../assets/content/samurai-writing.png) no-repeat 50% 20%;
   background-size: 150%;
 }
