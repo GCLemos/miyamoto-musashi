@@ -185,9 +185,16 @@
   .container__conteudo_home {
     width: 70%;
   }
+
   .div_conteudos__secao_principal {
     width: 20em;
     height: 12em;
+  }
+
+  .descricao__conteudos__secao_principal {
+    font-size: .9rem;
+    line-height: 1.2rem;
+    top: 45px;
   }
 }
 
@@ -195,6 +202,12 @@
   .div_conteudos__secao_principal {
     width: 15em;
     height: 9em;
+  }
+
+  .descricao__conteudos__secao_principal {
+    font-size: .7rem;
+    line-height: 1.2rem;
+    top: 20px;
   }
 }
 
@@ -228,10 +241,15 @@
   }
 
   .titulo_destaques__conteudo_home {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   
   .texto__conteudo_home {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .descricao__conteudos__secao_principal {
+    font-size: .9rem;
+    line-height: 1.2rem;
   }
 }

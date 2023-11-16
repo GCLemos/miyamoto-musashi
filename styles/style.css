@@ -248,7 +248,7 @@ body {
 
 @media (max-width: 600px) {
   .item__nav {
-    font-size: 120%;
+    font-size: 100%;
     padding: 0;
     margin: 1%;
   }

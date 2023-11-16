@@ -117,6 +117,7 @@
 
 .swiper-button-prev, .swiper-button-next {
   color: var(--cor-destaque);
+  margin: -.8em;
   transition: 0.15s all ease-in-out;
 }
 
@@ -313,13 +314,13 @@
   }
 
   .img_inicial__conteudo {
-    width: 200px;
-    height: 100px;
+    width: 250px;
+    height: 150px;
   }
 
   .swiper {
-    width: 250px;
-    height: 150px;
+    width: 320px;
+    height: 200px;
   }
 
   .texto_pinturas__swiper {
@@ -349,7 +350,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .container_secoes__conteudo {
     width: 80%;
     padding: 1em;
@@ -366,8 +367,8 @@
   }
 
   .swiper {
-    width: 250px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
   }
 
   .texto_pinturas__swiper {

@@ -94,3 +94,46 @@ textarea {
   filter: contrast(1.2);
   scale: .95;
 }
+
+
+@media (max-width: 1400px) {
+  .container_secoes__contato {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container_secoes__contato {
+    width: 90%;
+  }
+
+  .secao_formulario__contato {
+    width: 90%;
+  }
+}
+
+@media (max-width: 900px) {
+  .container_secoes__contato {
+    width: 100%;
+  }
+
+  .secao_formulario__contato {
+    width: 100%;
+  }
+
+  .titulo_formulario__contato {
+    font-size: 2rem;
+  }
+
+  .input_formulario__contatos {
+    width: 17em;
+    padding: .2em;
+  }
+  
+  textarea {
+    width: 17em;
+    height: 10em;
+    padding: .2em;
+  }
+}
+
