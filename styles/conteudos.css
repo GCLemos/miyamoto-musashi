@@ -399,13 +399,31 @@
 }
 
 @media (max-width: 450px) {
+   .titulo_pinturas__swiper {
+    font-size: 2.2rem;
+  }
+
   .swiper {
     width: 310px;
     height: 200px;
-    margin: -1.7em;
+    margin: 0 auto;
+    position: relative;
+    right: 1%;
   }
 
   .swiper-button-prev, .swiper-button-next {
     margin: 0 1.5em;
+  }
+}
+
+@media (max-width: 415px) {
+  .swiper {
+    right: 3%;
+  }
+}
+
+@media (max-width: 400px) {
+  .swiper {
+    right: 5%;
   }
 }
