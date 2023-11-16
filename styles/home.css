@@ -14,7 +14,7 @@
 .titulo__conteudo_home {
   font-family: var(--fonte--destaque);
   color: var(--cor-texto);
-  font-size: 7rem;
+  font-size: 600%;
   line-height: 1.2;
   margin-bottom: 2rem;
 }
@@ -29,11 +29,11 @@
   content: '';
   position: absolute;
   z-index: -2;
-  top: -6.2rem;
-  left: -5.7rem;
-  width: 15rem;
-  height: 15rem;
-  border-radius: 50%;
+  top: -65%;
+  left: -85%;
+  width: 200%;
+  height: 160%;
+  border-radius: 100%;
   background-color: var(--cor-destaque);
 }
 
@@ -181,3 +181,57 @@
 }
 
 
+@media (max-width: 1400px) {
+  .container__conteudo_home {
+    width: 70%;
+  }
+  .div_conteudos__secao_principal {
+    width: 20em;
+    height: 12em;
+  }
+}
+
+@media (max-width: 1150px) {
+  .div_conteudos__secao_principal {
+    width: 15em;
+    height: 9em;
+  }
+}
+
+@media (max-width: 900px) {
+  .secao_principal__conteudo_home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em 4em;
+    margin: 2em 0;
+  }
+
+  .div_conteudos__secao_principal {
+    width: 20em;
+    height: 12em;
+  }
+
+  .descricao__conteudos__secao_principal {
+    font-size: .9rem;
+    line-height: 1.2rem;
+    top: 45px;
+  }
+
+
+}
+
+@media (max-width: 550px) {
+  .titulo__conteudo_home {
+    font-size: 400%;
+  }
+
+  .titulo_destaques__conteudo_home {
+    font-size: 3rem;
+  }
+  
+  .texto__conteudo_home {
+    font-size: 1.2rem;
+  }
+}

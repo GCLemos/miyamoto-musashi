@@ -150,8 +150,6 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-
-
 .rodape {
   display: flex;
   justify-content: center;
@@ -180,13 +178,16 @@ body {
   gap: 1%;
 }
 
-.versao__rodape {
-  margin-right: 1%;
+.texto__rodape {
+  word-spacing: 0.15rem;
 }
 
-.texto__rodape {
-  width: 40%;
-  word-spacing: 0.15rem;
+.container_links__rodape {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
 }
 
 .fa-brands {
@@ -200,3 +201,63 @@ body {
   transform: translateY(-5px);
 }
 
+@media (max-width: 1400px) {
+  .texto__rodape {
+    font-size: 1.2rem;
+  }
+  .container_links__rodape {
+    margin: 1em 0 0 0;
+  }
+
+  .container_conteudo__rodape {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .item__nav {
+    font-size: 150%;
+    padding: 0;
+    margin: 1%;
+  }
+
+  .item__nav::after {
+    display: none;
+  }
+
+  .icone_inicio::before {
+    display: none;
+  }
+
+  .icone_biografia::before {
+    display: none;
+  }
+
+  .icone_kenjutsu::before {
+    display: none;
+  }
+
+  .icone_legado::before {
+    display: none;
+  }
+
+  .icone_contatos::before {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .item__nav {
+    font-size: 120%;
+    padding: 0;
+    margin: 1%;
+  }
+
+  .divisor__rodape {
+    width: 95%;
+  }
+
+  .texto__rodape {
+    font-size: .9rem;
+  }
+}

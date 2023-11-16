@@ -74,7 +74,7 @@
 }
 
 .container_paragrafo_pinturas__swiper {
-  height: 5%;
+  height: auto;
   width: 90%;
   padding-top: .1em;
   border: 2px solid var(--cor-borda);
@@ -224,4 +224,175 @@
 
 .texto__img a:visited, .paragrafos__conteudo a:visited {
   color: var(--cor-contraste);
+}
+
+@media (max-width: 1650px) {
+  .swiper {
+    width: 700px;
+    height: 420px;
+  }
+
+  .texto_pinturas__swiper {
+    font-size: .8em;
+  }
+}
+
+@media (max-width: 1400px) {
+  .titulo_pinturas__swiper {
+    font-size: 3.5rem;
+  }
+
+  .img_inicial__conteudo {
+    width: 600px;
+    height: 300px;
+  }
+
+  .img__conteudo {
+    width: 250px;
+    height: 350px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .titulo_pinturas__swiper {
+    font-size: 3rem;
+  }
+
+  .titulo_pinturas__swiper::after {
+    display: none;
+  }
+
+  .h2s__conteudo::after {
+    display: none;
+  }
+
+  .img_inicial__conteudo {
+    width: 300px;
+    height: 150px;
+  }
+
+  .secoes_iniciais__conteudo {
+    align-items: center;
+  }
+
+  .swiper {
+    width: 500px;
+    height: 300px;
+  }
+
+  .texto_pinturas__swiper {
+    font-size: .7em;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .secoes__conteudo {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 900px) {
+  .swiper {
+    width: 350px;
+    height: 210px;
+  }
+
+  .texto_pinturas__swiper {
+    font-size: .6em;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .titulo_pinturas__swiper {
+    font-size: 2.5rem;
+  }
+
+  .img_inicial__conteudo {
+    width: 200px;
+    height: 100px;
+  }
+
+  .swiper {
+    width: 250px;
+    height: 150px;
+  }
+
+  .texto_pinturas__swiper {
+    font-size: .5em;
+  }
+
+  .container_img__conteudo {
+    width: 208px;
+
+  }
+
+  .img__conteudo {
+    width: 200px;
+    height: 300px;
+  }
+
+  .h2s__conteudo {
+    font-size: 2.5rem;
+  }
+
+  .paragrafos__conteudo {
+    font-size: 1rem;
+  }
+
+  .ancoras_fonte__conteudo {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container_secoes__conteudo {
+    width: 80%;
+    padding: 1em;
+  }
+
+
+  .titulo_pinturas__swiper {
+    font-size: 2.5rem;
+  }
+
+  .img_inicial__conteudo {
+    width: 250px;
+    height: 150px;
+  }
+
+  .swiper {
+    width: 250px;
+    height: 150px;
+  }
+
+  .texto_pinturas__swiper {
+    font-size: .5em;
+  }
+
+  .container_img__conteudo {
+    width: 208px;
+
+  }
+
+  .img__conteudo {
+    width: 200px;
+    height: 300px;
+  }
+
+  .h2s__conteudo {
+    font-size: 2.5rem;
+  }
+
+  .paragrafos__conteudo {
+    font-size: .8rem;
+  }
+
+  .ancoras_fonte__conteudo {
+    font-size: 1rem;
+  }
 }
